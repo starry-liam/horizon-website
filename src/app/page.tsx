@@ -1,15 +1,24 @@
 import Image from "next/image";
 import CursorGlow from './components/CursorGlow';
-
+import Link from 'next/link'
+export const metadata = {
+  title: 'Horizon Avionics',
+  description: 'site description',//add later
+  icons: {
+    icon: '/favicon.ico',
+  },
+}
 export default function Home() {
   return (
     <CursorGlow>
       <div className="min-h-screen p-8 pb-20 sm:p-20">
-        <header className="fixed top-0 left-0 w-full px-6 py-4 bg-white text-black shadow-md z-50 flex items-center justify-between">
-          <nav className="space-x-6 hidden md:flex">
-            <a href="#about" className="hover:text-gray-400">About</a>
-            <a href="#features" className="hover:text-gray-400">Features</a>
-            <a href="#contact" className="hover:text-gray-400">Contact</a>
+        <header className="fixed top-0 left-0 w-full px-6 py-4 bg-white text-black shadow-md z-50 flex items-center justify-center">
+          <nav className="bg-white text-black p-4 flex gap-4 text-lg">
+            <Link href="/" className="hover:underline">Home</Link>
+            <Link href="/docs" className="hover:underline">Documentation</Link>
+            <Link href="/boards" className="hover:underline">Boards</Link>
+            <Link href="/contact" className="hover:underline">Contact</Link>
+            <Link href="/sponsers" className="hover:underline">Sponsers</Link>
           </nav>
         </header>
         
