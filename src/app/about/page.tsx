@@ -3,11 +3,11 @@ import Image from 'next/image';
 
 const boards = [
   { name: 'Horizon V1', percent: 45, color: 'bg-blue-500', stage: 4 },
-  { name: 'Horizon Mini', percent: 26, color: 'bg-green-500', stage: 3 },
+  { name: 'Horizon Mini', percent: 12, color: 'bg-green-500', stage: 3 },
   { name: 'Horizon Station', percent: 30, color: 'bg-yellow-400', stage: 2 },
 ];
 
-const stages = ['Design', 'Prototype', 'Testing', 'Production', 'Complete'];
+const stages = ['Idea', 'Prototype', 'Design', 'Production', 'Testing', 'Complete'];
 
 export default function AboutPage() {
   return(
