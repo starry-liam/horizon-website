@@ -12,8 +12,8 @@ export default function Home() {
   return (
     <CursorGlow>
       <div className="main"></div>
-      <div className="min-h-screen p-8 pb-20 sm:p-20">
-        <main className="pt-32 max-w-3xl mx-auto space-y-8 text-center">
+      <div className="min-h-screen p-4 pb-8 sm:p-8">
+        <main className="pt-24 max-w-3xl mx-auto space-y-8 text-center">
           <Image
             src="/horizonlogo.svg"
             alt="Horizon Avionics Logo"
@@ -22,12 +22,12 @@ export default function Home() {
             height={200}
           />
           <h2 className="text-2xl sm:text-3xl font-semibold">
-            Hackclub's first open source flight computer
+            First Ever Open Source Flight Computer
           </h2>
           
           <div className="space-y-4 text-lg text-gray-200">
             <p>3 Microcontrollers and all the features you could ever need</p>
-            <p>Designed by Hackclubbers, for Hackclubbers</p>
+            <p>By teenagers! For Enthusiasts!</p>
           </div>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center pt-8">
