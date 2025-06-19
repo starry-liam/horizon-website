@@ -1,0 +1,24 @@
+{
+  "name": "Horizon Avionics",
+  "short_name": "Horizon",
+  "description": "First ever fully open source flight computer. Built by teenagers for rocket enthusiasts, featuring advanced telemetry, data logging, thrust vector control and more.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#1e293b",
+  "theme_color": "#1e293b",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/horizonHlogoNOBG.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/horizonHlogoNOBG.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+} 
