@@ -58,7 +58,7 @@ export default function AboutPage() {
                     <div className={`${board.color} h-4 rounded-full transition-all duration-700`} style={{ width: `${board.percent}%` }}></div>
                     {/* Stage markers */}
                     {stages.map((_, i) => (
-                      <div key={i} className="absolute top-0 h-4" style={{ left: `${(i/(stages.length-1))*100}%`, width: '2px' }}>
+                      <div key={i} className="absolute top-0 h-4" style={{ left: `${(i/(stages.length-1))*100}%`, transform: 'translateX(-50%)', width: '2px' }}>
                         <div className={`h-4 w-0.5 ${i <= board.stage ? board.color : 'bg-white/30'} rounded-full mx-auto`}></div>
                       </div>
                     ))}
