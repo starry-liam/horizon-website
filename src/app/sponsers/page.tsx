@@ -16,7 +16,7 @@ export default function SponsorsPage() {
                           href="https://hcb.hackclub.com/donations/start/horizon-avionics"
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="inline-flex items-center justify-center gap-2 px-6 py-3 text-base font-large text-white bg-red-700 rounded-full hover:bg-green-800 transition-colors"
+                          className="inline-flex items-center justify-center gap-2 px-6 py-3 text-base font-large text-white bg-red-700 rounded-full hover:bg-red-600 transition-colors"
                         >
                           <Image
                             src="/hcb logo.png"
