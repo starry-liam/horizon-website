@@ -18,7 +18,12 @@ export default function BoardsPage() {
             <section className="relative bg-white/10 backdrop-blur-lg rounded-3xl shadow-2xl border border-white/20 p-8 sm:p-12 text-center mb-8">
             <div className=' flex-grow px-space-y-4 text-lg text-gray-200 justify-start items-center'>
               <p className='text-3xl font-bold'>Horizon V1</p>
-              <p className='text-lg font-bold'>The first version of the Horizon Avionics board.</p>
+              <p className="text-lg font-bold">
+                The first version of the Horizon Avionics board. Learn more{' '}
+                <a href="/boards/horizonv1" className="text-blue-500 hover:underline">
+                  here
+                </a>
+              </p>
               <p>We are still in development! If you would like to help, Please consider a donation on the sponsers page, Or contact us using the information on the contact page.</p>
             </div>
             </section>
