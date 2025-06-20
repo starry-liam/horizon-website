@@ -28,7 +28,7 @@ export default function Navbar() {
             { href: "/about", label: "About" },
             { href: "/boards", label: "Boards" },
             { href: "/contact", label: "Contact" },
-            { href: "/sponsers", label: "Sponsors" },
+            { href: "/sponsors", label: "Sponsors" },
           ].map(({ href, label }) => (
             <Link
               key={href}
