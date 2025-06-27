@@ -2,8 +2,8 @@ import CursorGlow from '../components/CursorGlow';
 import Image from 'next/image';
 
 const boards = [
-  { name: 'Horizon V1', percent: 45, color: 'bg-blue-500', stage: 4 },
-  { name: 'Horizon Mini', percent: 12, color: 'bg-green-500', stage: 3 },
+  { name: 'Horizon V1', percent: 60, color: 'bg-blue-500', stage: 4 },
+  { name: 'Horizon Mini', percent: 10, color: 'bg-green-500', stage: 3 },
   { name: 'Horizon Station', percent: 30, color: 'bg-yellow-400', stage: 2 },
 ];
 
