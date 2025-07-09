@@ -36,6 +36,37 @@ export default function BoardsPage() {
             />
             
           </div>
+          <div className='space-y-4 text-lg text-gray-200 justify-start flex items-center gap-20'>
+            <img
+                src="/minifron.png"
+                alt="Horizon Mini Front"
+                width={300}
+                height={50}
+                className="dark relative z-10 glow"
+            />
+
+            <section className="relative bg-white/10 backdrop-blur-lg rounded-3xl shadow-2xl border border-white/20 p-8 sm:p-12 text-center mb-8">
+            <div className=' flex-grow px-space-y-4 text-lg text-gray-200 justify-start items-center'>
+              <p className='text-3xl font-bold'>H²</p>
+              <p className="text-lg font-bold">
+                The smallest of the horizon boards, H² is the size for any rocket! Learn more {' '}
+                <a href="/boards/horizonmini" className="text-blue-500 hover:underline">
+                  here
+                </a>
+              </p>
+              <p>Stay tuned! May come to the market soon...</p>
+            </div>
+            </section>
+            <img
+                src="/miniback.png"
+                alt="Horizon Mini Front"
+                width={300}
+                height={300}
+                className="dark relative z-10 glow"
+            />
+
+          </div>
+
         </main>
 
       </div>
