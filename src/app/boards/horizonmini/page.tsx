@@ -20,7 +20,7 @@ export default function HorizonMiniPage() {
                     <p className='text-3xl font-bold'>Horizon presents the smallest of the boards at a length and width of only 35mm</p>
                     <p className="text-3xl font">Features</p>
                     <ul className="list-disc list-inside text-lg text-gray-200">
-                      <li>1 Arm Cortex M0+ MCU</li>
+                      <li>Arm Cortex M0+ MCU</li>
                       <li>Barometer and IMU</li>
                       <li>SD and NAND Datalogging</li>
                     </ul>
