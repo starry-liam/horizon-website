@@ -54,7 +54,7 @@ export default function BoardsPage() {
                   here
                 </a>
               </p>
-              <p>Stay tuned! May come to the market soon...</p>
+              <p>Starting at $50. Preordering coming soon so stay tuned!</p>
             </div>
             </section>
             <img

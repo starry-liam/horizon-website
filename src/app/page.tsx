@@ -22,12 +22,12 @@ export default function Home() {
             height={200}
           />
           <h2 className="text-2xl sm:text-3xl font-semibold">
-            First Ever Open Source Flight Computer
+            Open Source Avionics for the Next Generation of Rocketeers
           </h2>
           
           <div className="space-y-4 text-lg text-gray-200">
-            <p>3 Microcontrollers and all the features you could ever need</p>
-            <p>By teenagers! For Enthusiasts!</p>
+            <p>Boards starting at $50</p>
+            <p>Made for all levels of rocketry</p>
           </div>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center pt-8">
@@ -44,23 +44,13 @@ export default function Home() {
                   height={24}
                   className="dark:invert"
                 />
-                Check out the repositories
+                Click here for design files
               </a>
-              
-              <a
-                href="https://docs.google.com/document/d/1rhxR0z3o1-5nPLaZscAGfexemYaoFTkNt6UDeAldLvw/edit?pli=1&tab=t.0"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center justify-center px-6 py-3 text-base font-medium text-black bg-white rounded-full hover:bg-gray-100 transition-colors"
+              <Link
+                href="/sponsors"
+                className="inline-flex items-center justify-center gap-2 px-6 py-3 text-base font-medium text-white bg-gray-900 rounded-full hover:bg-gray-800 transition-colors"
               >
-                Read our docs
-              </a>
-            
-            <Link
-              href="/sponsers"
-              className="inline-flex items-center justify-center gap-2 px-6 py-3 text-base font-medium text-white bg-gray-900 rounded-full hover:bg-gray-800 transition-colors"
-            >
-              Sponsors
+              Sponsers/Donations
             </Link>
           </div>
         </main>

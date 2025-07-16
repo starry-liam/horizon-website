@@ -17,7 +17,7 @@ export default function HorizonMiniPage() {
                 />
                 <div className='flex-grow px-space-y-4 text-lg text-gray-200 justify-start items-center'>
                     <h1 className="text-5xl font-extrabold text-white mb-12 tracking-tight r">H²</h1>
-                    <p className='text-3xl font-bold'>Horizon presents the smallest of the boards at a length and width of only 35mm</p>
+                    <p className='text-3xl font-bold'>Horizon presents the smallest of the boards at a length and width of only 34mm</p>
                     <p className="text-3xl font">Features</p>
                     <ul className="list-disc list-inside text-lg text-gray-200">
                       <li>Arm Cortex M0+ MCU</li>
