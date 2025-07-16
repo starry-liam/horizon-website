@@ -1,6 +1,7 @@
 import Image from "next/image";
 import CursorGlow from './components/CursorGlow';
 import Link from 'next/link'
+import Layout from "./components/Layout"
 export const metadata = {
   title: 'Horizon Avionics',
   description: 'Horizon Avionics Computers',
@@ -11,8 +12,9 @@ export const metadata = {
 export default function Home() {
   return (
     <CursorGlow>
+      <Layout>
       <div className="main"></div>
-      <div className="min-h-screen p-4 pb-8 sm:p-8">
+      <div className="p-4 pb-8 sm:p-8">
         <main className="pt-24 max-w-3xl mx-auto space-y-8 text-center">
           <Image
             src="/horizonlogo.svg"
@@ -55,6 +57,7 @@ export default function Home() {
           </div>
         </main>
         </div>
+        </Layout>
     </CursorGlow>
   )
 }

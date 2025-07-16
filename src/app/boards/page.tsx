@@ -1,10 +1,12 @@
 import CursorGlow from '../components/CursorGlow';
 import Link from 'next/link'
+import Layout from '../components/Layout';
 export default function BoardsPage() {
   return (
     <CursorGlow>
+      <Layout>
       <div className="main"></div>
-      <div className="min-h-screen p-8 pb-20 sm:p-20">
+      <div className="p-8 pb-20 sm:p-20">
         <main className="pt-32 max-w-7xl mx-auto space-y-8 text-center">
           <div className='space-y-4 text-lg text-gray-200 justify-start flex items-center gap-20'>
             
@@ -70,6 +72,7 @@ export default function BoardsPage() {
         </main>
 
       </div>
+      </Layout>
     </CursorGlow>
   )
 }

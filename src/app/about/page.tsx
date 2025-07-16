@@ -1,5 +1,6 @@
 import CursorGlow from '../components/CursorGlow';
 import Image from 'next/image';
+import Layout from '../components/Layout';
 
 const boards = [
   { name: 'Horizon V1', percent: 60, color: 'bg-blue-500', stage: 4 },
@@ -12,8 +13,9 @@ const stages = ['Idea', 'Prototype', 'Design', 'Production', 'Testing', 'Complet
 export default function AboutPage() {
   return(
     <CursorGlow>
+      <Layout>
       <div className="main"></div>
-      <div className="min-h-screen flex flex-col items-center justify-center p-4 sm:p-8 pt-32 md:pt-36">
+      <div className="flex flex-col items-center justify-center p-4 sm:p-8 pt-32 md:pt-36">
         <main className="w-full max-w-3xl mx-auto space-y-16">
           {/* Hero Card */}
           <section className="relative bg-white/10 backdrop-blur-lg rounded-3xl shadow-2xl border border-white/20 p-8 sm:p-12 text-center mb-8">
@@ -76,6 +78,7 @@ export default function AboutPage() {
           </section>
         </main>
       </div>
+      </Layout>
     </CursorGlow>
   )
 }
