@@ -11,7 +11,7 @@ export default function SponsorsPage() {
             <h2 className="text-2xl sm:text-3xl font-semibold">
             None yet! if your insterested in contributing to our development, please contact us using the information on the {''}
             <a href="/contact" className="text-blue-500 hover:underline">
-                  Contact page
+                  contact page
                 </a>
             </h2> 
           
