@@ -52,7 +52,7 @@ export default function Home() {
                 href="/sponsors"
                 className="inline-flex items-center justify-center gap-2 px-6 py-3 text-base font-medium text-white bg-gray-900 rounded-full hover:bg-gray-800 transition-colors"
               >
-              Sponsers/Donations
+              Sponsors/Donations
             </Link>
           </div>
         </main>

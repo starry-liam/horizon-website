@@ -23,9 +23,9 @@ export default function HorizonV1Page() {
                     <p className="text-3xl font">Features</p>
                     <ul className="list-disc list-inside text-lg text-gray-200">
                       <li>3 Microcontrollers</li>
-                      <li>Barometer andIntertial measurement unit</li>
+                      <li>Barometer and Inertial measurement unit</li>
                       <li>Ability to control Servos, and Pyro channels</li>
-                      <li>Logs flight data to NAND, SD Card, and groundstaion via Radio</li>
+                      <li>Logs flight data to NAND, SD Card, and ground station via Radio</li>
                       <li>GPS for location tracking</li>
                       <li>Kalman filters for cleaner data</li>
                     </ul>

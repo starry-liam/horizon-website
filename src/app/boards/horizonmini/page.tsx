@@ -27,7 +27,7 @@ export default function HorizonMiniPage() {
                     <ul className="list-disc list-inside text-lg text-gray-200">
                       <li>Arm Cortex M0+ MCU</li>
                       <li>Altimeter and Gyroscope/Accelerometer</li>
-                      <li>SD card and EEPRROM datalogging</li>
+                      <li>SD card and EEPROM datalogging</li>
                     </ul>
                     <p className="text-lg font-bold">Pricing around $50. Preorders coming soon.</p>
                     <p className="text-lg font-bold">Want to help test? {''}</p>
