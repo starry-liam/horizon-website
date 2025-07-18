@@ -11,7 +11,7 @@ export default function SponsorsPage() {
         <main className="pt-32 max-w-3xl mx-auto space-y-8 text-center">
             <section className="relative bg-white/10 backdrop-blur-lg rounded-3xl shadow-2xl border border-white/20 p-8 sm:p-12 text-center mb-8">
             <h2 className="text-2xl sm:text-3xl font-semibold">
-            None yet! if your insterested in contributing to our development, please contact us using the information on the {''}
+            None yet! if your interested in contributing to our development, please contact us using the information on the {''}
             <a href="/contact" className="text-blue-500 hover:underline">
                   contact page
                 </a>
