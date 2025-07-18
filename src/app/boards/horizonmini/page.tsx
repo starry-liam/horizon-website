@@ -17,11 +17,11 @@ export default function HorizonMiniPage() {
                   height={50}
                   className="dark relative z-10 "
                 />
-                <div className='flex-grow px-space-y-4 text-lg text-gray-200 justify-start items-center'>
+                <div className='flex-grow px-space-y-5 text-lg text-gray-200 justify-start items-center'>
                     <h1 className="text-5xl font-extrabold text-white mb-12 tracking-tight r">H²</h1>
                     <p className='text-lgd font-bold'>H² has a length and width of only 34mm.</p>
                     <p className="text-lg font-bold">
-                      The small size makes it perfect for all rockets when you need a simple flightlogger.
+                      Will fit all rockets with 38mm or larger body tubes.
                     </p>
                     <p className="text-3xl font">Features</p>
                     <ul className="list-disc list-inside text-lg text-gray-200">
@@ -29,7 +29,11 @@ export default function HorizonMiniPage() {
                       <li>Altimeter and Gyroscope/Accelerometer</li>
                       <li>SD card and EEPRROM datalogging</li>
                     </ul>
-                    <p className="text-lg font-bold">At only $50, H² is the cheapest flightlogger on the market! </p>
+                    <p className="text-lg font-bold">Pricing around $50. Preorders coming soon.</p>
+                    <p className="text-lg font-bold">Want to help test? {''}</p>
+                    <a href="/contact" className="text-blue-500 hover:underline">
+                      Contact us!
+                    </a>
                 </div>
             </div>
           </section>
