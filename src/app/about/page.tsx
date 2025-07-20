@@ -23,7 +23,7 @@ export default function AboutPage() {
             <h1 className="text-4xl font-extrabold text-white mb-2 tracking-tight">About Us</h1>
             <p className="text-lg text-blue-200 font-semibold mb-4">Empowering the next generation of open source enthusiasts</p>
             <p className="text-base sm:text-lg text-gray-200 mb-2">Horizon Avionics is developing the future of open-source aerospace tech</p>
-            <p className="text-base sm:text-lg text-gray-300 mb-6">Under Hack Club, we are a 501(c)(3) non-profit, designing and building affordable avionics computers for amateur rocketry.</p>
+            <p className="text-base sm:text-lg text-gray-300 mb-6">Designing and building affordable avionics computers for amateur rocketry.</p>
             <div className="flex justify-center">
               <Image src="/horizonlogo.svg" alt="Horizon Avionics Logo" width={120} height={48} className="rounded-xl bg-white/10 p-2" />
             </div>
@@ -32,7 +32,7 @@ export default function AboutPage() {
           {/* What We Do */}
           <section className="bg-white/10 backdrop-blur-lg rounded-2xl shadow-xl border border-white/10 p-6 sm:p-10 text-center mb-8">
             <h2 className="text-2xl font-bold text-white mb-2">What We Do</h2>
-            <p className="text-gray-200 text-base sm:text-lg">We design, build, and share open-source avionics systems for amateur rocketry. Our mission is to make aerospace technology accessible, affordable, and fun for everyone.</p>
+            <p className="text-gray-200 text-base sm:text-lg">We design, build, share, and sell open-source avionics systems for amateur rocketry. Our mission is to make aerospace technology accessible, affordable, and fun for everyone.</p>
           </section>
           
           {/* Board Progress */}
