@@ -18,8 +18,11 @@ const boardLinks = [
   },
 ]
 
+import { useState } from "react"
+
 export default function Navbar() {
   const pathname = usePathname()
+  const [cartOpen, setCartOpen] = useState(false)
 
   return (
     <>
@@ -103,15 +106,43 @@ export default function Navbar() {
               </Link>
             ))}
           </div>
-        </nav>
-        <Link
-          href="/cart"
-          className="absolute right-6 top-1/2 -translate-y-1/2 flex items-center gap-2 px-3 sm:px-5 py-2.5 rounded-full bg-slate-800/70 backdrop-blur-sm shadow-lg text-slate-100 hover:bg-slate-700/50 transition-colors"
-          aria-label="View cart"
-        >
-          <ShoppingCart className="h-4 w-4" />
-          <span className="hidden sm:inline">Cart</span>
-        </Link>
+
+         {/* Cart Button (inside nav, next to links) */}
+          </nav>   {/* 👈 close the nav here */}
+            <button
+            id="cartBtn"
+            className="ml-4 flex items-center gap-2 bg-slate-800/70 text-white px-4 py-2 rounded-full shadow hover:bg-red-500 transition"
+            onClick={() => setCartOpen(true)}
+            aria-label="Open cart"
+          >
+            <ShoppingCart className="h-5 w-5" />
+            Cart
+          </button>
+          <div
+            id="cartSidebar"
+            className={`fixed top-0 right-0 w-80 h-full bg-slate-800/70 shadow-lg transform transition-transform duration-300 z-50 ${
+              cartOpen ? "translate-x-0" : "translate-x-full"
+            }`}
+          >
+            
+            <div className="flex items-center justify-between p-4 border-b">
+              <h2 className="text-lg font-semibold">Your Cart</h2>
+              <button
+                id="closeCart"
+                className="text-gray-600 hover:text-red-400 text-2xl"
+                onClick={() => setCartOpen(false)}
+                aria-label="Close cart"
+              >
+                &times;
+              </button>
+            </div>
+            <div id="cartContent" className="p-4 space-y-2">
+              
+            </div>
+            <div className="absolute bottom-0 w-full p-4 border-t">
+              <button className="w-full bg-blue-600 text-white py-2 rounded">Checkout</button>
+            </div>
+          </div>
       </header>
     </>
   )
