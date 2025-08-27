@@ -28,7 +28,7 @@ export default function Home() {
           </h2>
           
           <div className="space-y-4 text-lg text-gray-200">
-            <p>Boards starting at $50</p>
+            <p>Board pre-orders coming soon!</p>
             <p>Made for all levels of rocketry</p>
           </div>
 

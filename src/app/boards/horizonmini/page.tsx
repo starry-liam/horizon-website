@@ -29,11 +29,7 @@ export default function HorizonMiniPage() {
                       <li>Altimeter and Gyroscope/Accelerometer</li>
                       <li>SD card and EEPROM datalogging</li>
                     </ul>
-                    <p className="text-lg font-bold">Pricing around $50. Preorders coming soon.</p>
-                    <p className="text-lg font-bold">Want to help test? {''}</p>
-                    <a href="/contact" className="text-blue-500 hover:underline">
-                      Contact us!
-                    </a>
+                    <p className="text-lg font-bold">Pricing around $30. Preorders coming soon.</p>
                 </div>
             </div>
           </section>
