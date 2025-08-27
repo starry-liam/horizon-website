@@ -41,7 +41,18 @@ body{
 .glow {
   filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.6)) drop-shadow(0 0 12px rgba(255, 255, 255, 0.4));
 }
-
+.cart-btn {
+  position: absolute;
+  right: 1rem;   /* pushes it to the far right */
+  top: 50%;      /* moves its top to halfway down the navbar */
+  transform: translateY(-50%); /* pulls it up so it's perfectly centered */
+}
+.navbar {
+  display: flex;
+  justify-content: center; /* keeps the pill centered */
+  align-items: center;     /* vertically aligns both pill and cart */
+  position: relative;
+}
 
 @keyframes zoom {
     0%{

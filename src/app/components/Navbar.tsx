@@ -3,6 +3,7 @@ import Link from "next/link"
 import Image from "next/image"
 import { usePathname } from "next/navigation"
 import { ChevronDown } from "lucide-react"
+import { ShoppingCart } from "lucide-react" // add icon if you want
 
 const boardLinks = [
   {
@@ -22,9 +23,9 @@ export default function Navbar() {
 
   return (
     <>
-      <header className="fixed top-6 left-1/2 transform -translate-x-1/2 z-50">
+      <header className="fixed top-6 left-0 right-0 z-50 flex items-center px-6">
         <nav
-          className="bg-slate-800/70 backdrop-blur-sm text-white px-3 sm:px-5 py-2.5 rounded-full shadow-lg flex items-center gap-2 sm:gap-4 text-sm sm:text-base"
+          className="mx-auto w-max bg-slate-800/70 backdrop-blur-sm text-white px-3 sm:px-5 py-2.5 rounded-full shadow-lg flex items-center gap-2 sm:gap-4 text-sm sm:text-base"
           role="navigation"
           aria-label="Main navigation"
         >
@@ -103,6 +104,14 @@ export default function Navbar() {
             ))}
           </div>
         </nav>
+        <Link
+          href="/cart"
+          className="absolute right-6 top-1/2 -translate-y-1/2 flex items-center gap-2 px-3 sm:px-5 py-2.5 rounded-full bg-slate-800/70 backdrop-blur-sm shadow-lg text-slate-100 hover:bg-slate-700/50 transition-colors"
+          aria-label="View cart"
+        >
+          <ShoppingCart className="h-4 w-4" />
+          <span className="hidden sm:inline">Cart</span>
+        </Link>
       </header>
     </>
   )
