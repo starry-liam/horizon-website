@@ -2,8 +2,9 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import Navbar from "./components/Navbar";
 import "./globals.css";
+import { CartProvider } from "@/context/CartContext"
 
-const inter = Inter({
+const inter = Inter({ 
   subsets: ["latin"],
   variable: "--font-inter",
 });
@@ -85,8 +86,10 @@ export default function RootLayout({
         <link rel="canonical" href="https://horizon-avionics.org" />
       </head>
       <body className={`${inter.variable} font-sans antialiased`}>
-        <Navbar />
-        {children}
+        <CartProvider>     {/* 👈 wrap app here */}
+            <Navbar />
+            {children}
+        </CartProvider>
       </body>
     </html>
   );

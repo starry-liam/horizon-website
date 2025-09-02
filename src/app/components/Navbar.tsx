@@ -2,8 +2,9 @@
 import Link from "next/link"
 import Image from "next/image"
 import { usePathname } from "next/navigation"
-import { ChevronDown } from "lucide-react"
-import { ShoppingCart } from "lucide-react" // add icon if you want
+import { ChevronDown, ShoppingCart } from "lucide-react"
+import { useState } from "react"
+import { useCart } from "@/context/CartContext" // 👈 import context
 
 const boardLinks = [
   {
@@ -18,11 +19,12 @@ const boardLinks = [
   },
 ]
 
-import { useState } from "react"
-
 export default function Navbar() {
   const pathname = usePathname()
   const [cartOpen, setCartOpen] = useState(false)
+
+  const { cart, removeFromCart, updateQuantity } = useCart() // 👈 from context
+  const totalItems = cart.reduce((sum, item) => sum + item.quantity, 0)
 
   return (
     <>
@@ -32,6 +34,7 @@ export default function Navbar() {
           role="navigation"
           aria-label="Main navigation"
         >
+          {/* Logo */}
           <Link
             href="/"
             className="inline-flex items-center justify-center hover:opacity-80 transition-opacity"
@@ -40,6 +43,7 @@ export default function Navbar() {
             <Image src="/horizonHlogoNOBG.png" alt="Horizon Logo" width={40} height={40} priority />
           </Link>
 
+          {/* Links */}
           <div className="flex items-center gap-1 sm:gap-2">
             {[
               { href: "/", label: "Home" },
@@ -90,6 +94,7 @@ export default function Navbar() {
               </div>
             </div>
 
+            {/* Extra Links */}
             {[
               { href: "/contact", label: "Contact" },
               { href: "/sponsors", label: "Sponsors" },
@@ -106,43 +111,91 @@ export default function Navbar() {
               </Link>
             ))}
           </div>
+        </nav>
 
-         {/* Cart Button (inside nav, next to links) */}
-          </nav>   {/* 👈 close the nav here */}
+        {/* Cart Button */}
+        <button
+          id="cartBtn"
+          className="ml-4 flex items-center gap-2 bg-slate-800/70 text-white px-4 py-4 rounded-full shadow hover:bg-red-500 transition relative"
+          onClick={() => setCartOpen((prev) => !prev)} // toggle
+          aria-label="Toggle cart"
+        >
+          <ShoppingCart className="h-5 w-5" />
+          {totalItems > 0 && (
+            <span className="absolute -top-1 -right-1 bg-red-500 text-xs rounded-full px-2 py-0.5">
+              {totalItems}
+            </span>
+          )}
+        </button>
+
+        {/* Cart Sidebar */}
+        <div
+          id="cartSidebar"
+          className={`fixed top-0 right-0 w-80 h-full bg-slate-900/95 text-white shadow-lg transform transition-transform duration-300 z-50 ${
+            cartOpen ? "translate-x-0" : "translate-x-full"
+          }`}
+        >
+          <div className="flex items-center justify-between p-4 border-b border-slate-700">
+            <h2 className="text-lg font-semibold">Your Cart</h2>
             <button
-            id="cartBtn"
-            className="ml-4 flex items-center gap-2 bg-slate-800/70 text-white px-4 py-2 rounded-full shadow hover:bg-red-500 transition"
-            onClick={() => setCartOpen(true)}
-            aria-label="Open cart"
-          >
-            <ShoppingCart className="h-5 w-5" />
-            Cart
-          </button>
-          <div
-            id="cartSidebar"
-            className={`fixed top-0 right-0 w-80 h-full bg-slate-800/70 shadow-lg transform transition-transform duration-300 z-50 ${
-              cartOpen ? "translate-x-0" : "translate-x-full"
-            }`}
-          >
-            
-            <div className="flex items-center justify-between p-4 border-b">
-              <h2 className="text-lg font-semibold">Your Cart</h2>
-              <button
-                id="closeCart"
-                className="text-gray-600 hover:text-red-400 text-2xl"
-                onClick={() => setCartOpen(false)}
-                aria-label="Close cart"
-              >
-                &times;
+              id="closeCart"
+              className="hover:text-red-400 text-2xl"
+              onClick={() => setCartOpen(false)}
+              aria-label="Close cart"
+            >
+              &times;
+            </button>
+          </div>
+
+          {/* Cart Content */}
+          <div id="cartContent" className="p-4 space-y-4">
+            {cart.length === 0 ? (
+              <p className="text-slate-400">Your cart is empty</p>
+            ) : (
+              cart.map((item) => (
+                <div
+                  key={item.id}
+                  className="flex justify-between items-center border-b border-slate-700 pb-2"
+                >
+                  <div>
+                    <p className="font-medium">{item.name}</p>
+                    <p className="text-sm text-slate-400">${item.price}</p>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <button
+                      onClick={() => updateQuantity(item.id, item.quantity - 1)}
+                      className="px-2 bg-slate-700 rounded"
+                    >
+                      -
+                    </button>
+                    <span>{item.quantity}</span>
+                    <button
+                      onClick={() => updateQuantity(item.id, item.quantity + 1)}
+                      className="px-2 bg-slate-700 rounded"
+                    >
+                      +
+                    </button>
+                    <button
+                      onClick={() => removeFromCart(item.id)}
+                      className="text-red-400 text-sm"
+                    >
+                      Remove
+                    </button>
+                  </div>
+                </div>
+              ))
+            )}
+          </div>
+
+          {/* Checkout */}
+          {cart.length > 0 && (
+            <div className="absolute bottom-0 w-full p-4 border-t border-slate-700">
+              <button className="w-full bg-blue-600 hover:bg-blue-500 text-white py-2 rounded">
+                Checkout
               </button>
             </div>
-            <div id="cartContent" className="p-4 space-y-2">
-              
-            </div>
-            <div className="absolute bottom-0 w-full p-4 border-t">
-              <button className="w-full bg-blue-600 text-white py-2 rounded">Checkout</button>
-            </div>
-          </div>
+          )}
+        </div>
       </header>
     </>
   )
