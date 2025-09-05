@@ -20,8 +20,8 @@ export default function Home() {
             src="/horizonlogo.svg"
             alt="Horizon Avionics Logo"
             className ="flex mx-auto ax-w-2mxl justify-center"
-            width={500}
-            height={200}
+            width={662}
+            height={265}
           />
           <h2 className="text-2xl sm:text-3xl font-semibold">
             Open Source Avionics for the Next Generation of Rocketeers
