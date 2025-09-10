@@ -24,12 +24,14 @@ export default function Home() {
             height={265}
           />
           <h2 className="text-2xl sm:text-3xl font-semibold">
-            Open Source Avionics for the Next Generation of Rocketeers
+            From our mind, to design, to your rocket.
           </h2>
           
           <div className="space-y-4 text-lg text-gray-200">
+            <p>Launching Open Source Avionics for the Next Generation of Rocketry</p>
+          </div>
+          <div className="text-gray-200 max-w-xl mx-auto font-medium italic">
             <p>Board pre-orders coming soon!</p>
-            <p>Made for all levels of rocketry</p>
           </div>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center pt-8">
@@ -37,7 +39,7 @@ export default function Home() {
                 href="https://github.com/Horizon-Avionics"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center gap-2 px-6 py-3 text-base font-medium text-white bg-gray-900 rounded-full hover:bg-gray-800 transition-colors"
+                className="inline-flex items-center justify-center gap-2 px-6 py-3 text-base font-medium text-white bg-gray-900 rounded-full hover:bg-red-500 transition-colors"
               >
                 <Image
                   src="/github.svg"
@@ -46,13 +48,13 @@ export default function Home() {
                   height={24}
                   className="dark:invert"
                 />
-                Click here for design files
+                Explore design files
               </a>
               <Link
-                href="/sponsors"
-                className="inline-flex items-center justify-center gap-2 px-6 py-3 text-base font-medium text-white bg-gray-900 rounded-full hover:bg-gray-800 transition-colors"
+                href="/boards/horizonmini"
+                className="inline-flex items-center justify-center gap-2 px-6 py-3 text-base font-medium text-white bg-gray-900 rounded-full hover:bg-red-500 transition-colors"
               >
-              Sponsors/Donations
+              Check Out our new board
             </Link>
           </div>
         </main>
