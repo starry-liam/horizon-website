@@ -25,7 +25,7 @@ export default function AboutPage() {
             <p className="text-base sm:text-lg text-gray-200 mb-2">Horizon Avionics is developing the future of open-source aerospace tech</p>
             <p className="text-base sm:text-lg text-gray-300 mb-6">Designing and building affordable avionics computers for amateur rocketry.</p>
             <div className="flex justify-center">
-              <Image src="/horizonlogo.svg" alt="Horizon Avionics Logo" width={120} height={48} className="rounded-xl bg-white/10 p-2" />
+              <Image src="/Horizon Logo.png" alt="Horizon Avionics Logo" width={120} height={48} className="rounded-xl bg-white/10 p-2" />
             </div>
           </section>
 

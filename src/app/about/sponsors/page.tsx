@@ -1,7 +1,7 @@
-import CursorGlow from '../components/CursorGlow';
+import CursorGlow from '../../components/CursorGlow';
 import Link from 'next/link'
 import Image from 'next/image';
-import Layout from '../components/Layout';
+import Layout from '../../components/Layout';
 export default function SponsorsPage() {
   return (
     <CursorGlow>

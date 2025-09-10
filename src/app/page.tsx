@@ -17,7 +17,7 @@ export default function Home() {
       <div className="p-4 pb-8 sm:p-8">
         <main className="pt-24 max-w-3xl mx-auto space-y-8 text-center">
           <Image
-            src="/horizonlogo.svg"
+            src="/Horizon Logo.png"
             alt="Horizon Avionics Logo"
             className ="flex mx-auto ax-w-2mxl justify-center"
             width={662}
