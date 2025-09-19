@@ -18,7 +18,10 @@ export default function ContactPage() {
                       For any inquiries, please reach out to us at:
                   </p>
                   <a href="mailto:sales@horizonavionics.org" className="text-blue-500 hover:underline">sales@horizonavionics.org</a>
+
+                  
                 </section>
+                
             </main>
         </div>
       </div>

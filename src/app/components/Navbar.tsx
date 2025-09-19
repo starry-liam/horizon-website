@@ -9,12 +9,12 @@ import { useCart } from "@/context/CartContext" // 👈 import context
 const boardLinks = [
   {
     title: "Horizon v1",
-    href: "/boards/horizonv1",
+    href: "/products/horizonv1",
     description: "Our flagship development board",
   },
   {
     title: "H²",
-    href: "/boards/horizonmini",
+    href: "/products/horizonmini",
     description: "Compact version with essential features",
   },
 ]
@@ -64,13 +64,13 @@ export default function Navbar() {
             {/* Boards Dropdown */}
             <div className="relative group">
               <Link
-                href="/boards"
+                href="/products"
                 className={`relative px-2 sm:px-4 py-2 rounded-full transition-colors hover:bg-slate-700/50 flex items-center gap-1 ${
-                  pathname.startsWith("/boards") ? "text-blue-400 bg-slate-700/50" : "text-slate-100"
+                  pathname.startsWith("/products") ? "text-blue-400 bg-slate-700/50" : "text-slate-100"
                 }`}
-                aria-current={pathname.startsWith("/boards") ? "page" : undefined}
+                aria-current={pathname.startsWith("/products") ? "page" : undefined}
               >
-                Boards
+                Products
                 <ChevronDown className="h-3 w-3 transition-transform group-hover:rotate-180" />
               </Link>
 

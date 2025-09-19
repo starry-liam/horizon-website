@@ -51,7 +51,7 @@ export default function Home() {
                 Explore design files
               </a>
               <Link
-                href="/boards/horizonmini"
+                href="/products/horizonmini"
                 className="inline-flex items-center justify-center gap-2 px-6 py-3 text-base font-medium text-white bg-gray-900 rounded-full hover:bg-red-500 transition-colors"
               >
               Check Out our new board

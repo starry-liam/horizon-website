@@ -22,7 +22,7 @@ export default function BoardsPage() {
               <p className='text-3xl font-bold'>H²</p>
               <p className="text-lg font-bold">
                 The smallest of the horizon boards, H² is the size for any rocket! Learn more {' '}
-                <a href="/boards/horizonmini" className="text-blue-500 hover:underline">
+                <a href="/products/horizonmini" className="text-blue-500 hover:underline">
                   here
                 </a>
               </p>
@@ -52,7 +52,7 @@ export default function BoardsPage() {
               <p className='text-3xl font-bold'>Horizon V1</p>
               <p className="text-lg font-bold">
                 The first version of the Horizon Avionics board. Learn more{' '}
-                <a href="/boards/horizonv1" className="text-blue-500 hover:underline">
+                <a href="/products/horizonv1" className="text-blue-500 hover:underline">
                   here
                 </a>
               </p>
