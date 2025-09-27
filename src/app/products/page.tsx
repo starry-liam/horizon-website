@@ -9,33 +9,21 @@ export default function BoardsPage() {
       <div className="p-8 pb-20 sm:p-20">
         <main className="pt-32 max-w-7xl mx-auto space-y-8 text-center">
           <div className='space-y-4 text-lg text-gray-200 justify-start flex items-center gap-20'>
-            <img
-                src="/minifron.png"
-                alt="Horizon Mini Front"
-                width={300}
-                height={50}
-                className="dark relative z-10 glow"
-            />
+            
 
-            <section className="relative bg-white/10 backdrop-blur-lg rounded-3xl shadow-2xl border border-white/20 p-8 sm:p-12 text-center mb-8">
-            <div className=' flex-grow px-space-y-4 text-lg text-gray-200 justify-start items-center'>
-              <p className='text-3xl font-bold'>H²</p>
-              <p className="text-lg font-bold">
-                The smallest of the horizon boards, H² is the size for any rocket! Learn more {' '}
-                <a href="/products/horizonmini" className="text-blue-500 hover:underline">
-                  here
-                </a>
-              </p>
-              <p>Starting at $50. Preordering coming soon so stay tuned!</p>
-            </div>
+            <section className="relative bg-white/10 backdrop-blur-lg rounded-3xl shadow-2xl border border-white/20 p-8 sm:p-12 mb-8">
+              <div className="flex flex-row items-center space-x-6 text-lg text-gray-200">
+                <img
+                  src="/minifron.png"
+                  alt="Horizon Mini Front"
+                  width={300}
+                  height={50}
+                  className="dark relative z-10 glow"
+                />
+                <p className="text-4xl font-bold">H²</p>
+              </div>
             </section>
-            <img
-                src="/miniback.png"
-                alt="Horizon Mini Front"
-                width={300}
-                height={300}
-                className="dark relative z-10 glow"
-            />
+
 
           </div>
           <div className='space-y-4 text-lg text-gray-200 justify-start flex items-center gap-20'>

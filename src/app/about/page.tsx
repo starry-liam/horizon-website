@@ -3,8 +3,8 @@ import Image from 'next/image';
 import Layout from '../components/Layout';
 
 const boards = [
-  { name: 'Horizon V1', percent: 45, color: 'bg-blue-500', stage: 4 },
-  { name: 'Horizon Mini', percent: 80, color: 'bg-green-500', stage: 3 },
+  { name: 'Horizon V1', percent: 80, color: 'bg-blue-500', stage: 4 },
+  { name: 'Horizon Mini', percent: 100, color: 'bg-green-500', stage: 3 },
   { name: 'Horizon Station', percent: 15, color: 'bg-yellow-400', stage: 2 },
 ];
 
