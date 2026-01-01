@@ -20,7 +20,11 @@ export default function BoardsPage() {
                   height={50}
                   className="dark relative z-10 glow"
                 />
-                <p className="text-4xl font-bold">H²</p>
+                <div className=' flex-grow px-space-y-4 text-lg text-gray-200 justify-start items-center'>
+                    <p className="text-4xl font-bold">H²</p>
+                    <p className="text-xl font-bold">Smallest Board at only 34mm²</p>
+                    <p className="text-xl font-bold">Altimeter, Accelerometer, and Gyroscope logging</p>
+                </div>
               </div>
             </section>
 
@@ -44,7 +48,9 @@ export default function BoardsPage() {
                   here
                 </a>
               </p>
-              <p>We are still in development! If you would like to help, Please consider a donation on the sponsers page, Or contact us using the information on the contact page.</p>
+              <p>3 MCUs, Altimeter, Gyroscope/Altimeter, 
+                  Telemetry Radio, Bluetooth, Data Logging
+              </p>
             </div>
             </section>
             <img 
