@@ -91,6 +91,7 @@ export default function RootLayout({
             <Navbar />
             {children}
         </CartProvider>
+        <Analytics />
       </body>
     </html>
   );
